@@ -1,0 +1,16 @@
+<section class="experience-section" id="experience">
+  <h2 class="experience-title">Experience</h2>
+  <div class="experience-grid">
+    <div class="experience-item" *ngFor="let exp of experiences">
+      <div class="exp-header">
+        <div class="exp-role">{{ exp.role }}</div>
+        <div class="exp-duration">{{ exp.duration }}</div>
+        <div class="exp-tagline">{{ exp.tagline }}</div>
+      </div>
+      
+      <ul class="exp-details">
+        <li *ngFor="let item of exp.details">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

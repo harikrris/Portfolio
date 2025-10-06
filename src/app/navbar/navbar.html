@@ -1,0 +1,11 @@
+<header class="header">
+  <a href="#" class="logo">Portfolio</a>
+  <nav class="navbar">
+    <a routerLink="/" fragment="home">Home</a>
+    <a routerLink="/" fragment="about">About</a>
+    <a routerLink="/" fragment="experience">Experience</a>
+    <a routerLink="/" fragment="skills">Skills</a>
+    <a routerLink="/" fragment="projects">Projects</a>
+    <a href="#contact" (click)="$event.preventDefault(); openContact.emit()">Contact</a>
+  </nav>
+</header>

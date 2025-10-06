@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home-btn-row {
+	display: flex;
+	gap: 18px;
+	margin-top: 10px;
+}
+/* Homepage styles */
+.home {
+	position: relative;
+	width: 100%;
+	justify-content: space-between;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	padding: 70px 10% 0;
+}
+.home-content {
+	max-width: 600px;
+}
+.home-content h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	color: #ededed;
+}
+.home-content h3 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: #ededed;
+}
+.home-content p {
+	margin: 20px 0 30px 0;
+	color: #ededed;
+	font-size: 1.1rem;
+}
+.home-sci a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid #0ef;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #0ef;
+	text-decoration: none;
+	margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+	background: #0ef;
+	color: #081b29;
+	box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+	display: inline-block;
+	padding: 12px 28px;
+	background: #0ef;
+	border-radius: 40px;
+	font-size: 16px;
+	color: #081b29;
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-weight: 600;
+}
+.btn-box:hover {
+	box-shadow: 0 0 20px #0ef;
+}
+.typing {
+	color: #0ef;
+}
