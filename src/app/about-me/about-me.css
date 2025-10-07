@@ -1,157 +1,243 @@
-/* Stack About Me title and content vertically */
-.about-me-vertical {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+/* About Me section styles */
+.about-me {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 40px 0;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
-/* About Me title styling */
+
+.about-me-vertical {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .about-me-title {
-	width: 100%;
-	margin-bottom: 40px;
-	margin-left: 10%;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .about-me-title h3 {
-	font-size: 2rem;
-	color: aliceblue;
-	font-weight: 700;
-	margin: 0;
-	text-align: left;
-}
-/* My Journey section styles */
-.my-journey-section {
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-.my-journey-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	gap: 60px;
-	max-width: 1100px;
-	width: 100%;
-	margin: 0 auto;
-}
-.my-journey-content {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-}
-.my-journey-content h3 {
-	font-size: 2rem;
-	font-weight: 700;
-	color: #0ef;
-	margin-bottom: 12px;
+    font-size: 2.5rem;
+    color: aliceblue;
+    font-weight: 700;
+    margin: 0;
 }
 
-.my-journey-content h4 {
-    margin-top: 10px;
-	color: aliceblue;
-	margin-bottom: 12px;
-}
-.my-journey-content p {
-	color: #ededed;
-	font-size: 1.1rem;
-	line-height: 1.7;
-}
-.my-journey-img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 260px;
-	min-height: 260px;
-}
-.my-journey-img img {
-	width: 260px;
-	height: 260px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 6px solid #0ef;
-	background: #081b29;
-}
-
-/* Centered About Me section styles */
-.about-me {
-	width: 100vw;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	min-height: 0;
-	margin-top: 50px;
-	margin-bottom: 40px;
-}
 .about-me-container {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 60px;
-	max-width: 1100px;
-	width: 100%;
-	margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
 }
+
 .about-me-img {
-	display: flex;
-	margin-bottom: 40px;
-	justify-content: center;
-	min-width: 260px;
-	min-height: 260px;
+    display: flex;
+    justify-content: center;
+    min-width: 260px;
+    min-height: 260px;
 }
+
 .about-me-img img {
-	width: 260px;
-	height: 260px;
-	object-fit: cover;
-	border-radius: 50%;
-	border: 6px solid #0ef;
-	background: #081b29;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #0ef;
+    background: #081b29;
 }
+
 .about-me-content {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .about-me-content h3 {
-	font-size: 1.5rem;
-	font-weight: 600;
-	color: #0ef;
-	margin-bottom: 18px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0ef;
+    margin-bottom: 18px;
 }
+
 .about-me-content p {
-	color: #ededed;
-	margin-bottom: 18px;
-	font-size: 1.1rem;
+    color: #ededed;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
+
 .about-me-content ul {
-	color: #ededed;
-	padding-left: 18px;
-	font-size: 1.05rem;
+    color: #ededed;
+    padding-left: 20px;
+    font-size: 1.05rem;
+    width: 100%;
 }
+
 .about-me-content ul li {
-	margin-bottom: 10px;
-	line-height: 1.7;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* My Journey section styles */
+.my-journey-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.my-journey-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.my-journey-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.my-journey-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0ef;
+    margin-bottom: 20px;
+}
+
+.my-journey-content h4 {
+    color: aliceblue;
+    margin: 20px 0 12px 0;
+    font-size: 1.3rem;
 }
 
 .my-journey-content p {
-	color: #ededed;
-	margin-bottom: 18px;
-	font-size: 1.1rem;
+    color: #ededed;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
-.my-journey-content ul {
-	color: #ededed;
-	padding-left: 18px;
-	font-size: 1.05rem;
+
+.my-journey-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 260px;
 }
-.my-journey-content ul li {
-	margin-bottom: 10px;
-	line-height: 1.7;
+
+.my-journey-img img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #0ef;
+    background: #081b29;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-me {
+        margin: 60px 0 30px 0;
+        padding: 0 20px;
+    }
+
+    .about-me-title h3 {
+        font-size: 2rem;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .about-me-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-me-content p {
+        font-size: 1rem;
+    }
+
+    .about-me-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .my-journey-section {
+        margin: 60px 0;
+        padding: 0 20px;
+    }
+
+    .my-journey-container {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .my-journey-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .my-journey-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .my-journey-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .my-journey-content p {
+        font-size: 1rem;
+    }
+
+    .my-journey-img img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .my-journey-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-me-title h3 {
+        font-size: 1.8rem;
+    }
+
+    .my-journey-content h3 {
+        font-size: 1.6rem;
+    }
 }

@@ -1,11 +1,33 @@
 <header class="header">
-  <a href="#" class="logo">Portfolio</a>
-  <nav class="navbar">
-    <a routerLink="/" fragment="home">Home</a>
-    <a routerLink="/" fragment="about">About</a>
-    <a routerLink="/" fragment="experience">Experience</a>
-    <a routerLink="/" fragment="skills">Skills</a>
-    <a routerLink="/" fragment="projects">Projects</a>
-    <a href="#contact" (click)="$event.preventDefault(); openContact.emit()">Contact</a>
-  </nav>
+    <a href="#" class="logo">Portfolio</a>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="navbar">
+        <a (click)="navigateTo('home', $event)">Home</a>
+        <a (click)="navigateTo('about', $event)">About</a>
+        <a (click)="navigateTo('experience', $event)">Experience</a>
+        <a (click)="navigateTo('skills', $event)">Skills</a>
+        <a (click)="navigateTo('projects', $event)">Projects</a>
+        <a (click)="navigateTo('contact', $event)">Contact</a>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-navbar" [class.active]="isMenuOpen">
+        <a (click)="navigateTo('home', $event); closeMenu()">Home</a>
+        <a (click)="navigateTo('about', $event); closeMenu()">About</a>
+        <a (click)="navigateTo('experience', $event); closeMenu()">Experience</a>
+        <a (click)="navigateTo('skills', $event); closeMenu()">Skills</a>
+        <a (click)="navigateTo('projects', $event); closeMenu()">Projects</a>
+        <a (click)="navigateTo('contact', $event); closeMenu()">Contact</a>
+    </nav>
+
+    <!-- Backdrop for mobile menu -->
+    <div class="menu-backdrop" [class.active]="isMenuOpen" (click)="closeMenu()"></div>
 </header>
