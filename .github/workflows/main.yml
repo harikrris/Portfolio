@@ -1,0 +1,30 @@
+name: Notify Test Framework
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.css'
+      - 'assets/**'
+  workflow_dispatch:
+
+jobs:
+  notify-tests:
+    name: Trigger Test Framework
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Trigger Test Framework
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.TEST_REPO_PAT }}
+        repository: harikrris/PortfolioTests
+        event-type: portfolio-updated
+        client-payload: |
+          {
+            "portfolio_commit": "${{ github.sha }}",
+            "portfolio_commit_message": "${{ github.event.head_commit.message }}",
+            "triggered_by": "portfolio-update"
+          }
