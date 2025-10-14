@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { BehaviorSubject, Subscription, timer } from 'rxjs';
 
@@ -10,6 +10,8 @@ import { BehaviorSubject, Subscription, timer } from 'rxjs';
   styleUrls: ['./homepage.css']
 })
 export class HomepageComponent implements OnInit, OnDestroy {
+  @Output() openContact = new EventEmitter<void>(); 
+
   roles: string[] = ["Lead SDET", "QA", "AI Enabled SDET"];
   displayText$ = new BehaviorSubject<string>('');
   private roleIndex = 0;
@@ -17,12 +19,18 @@ export class HomepageComponent implements OnInit, OnDestroy {
   private typing = true;
   private sub: Subscription | null = null;
 
+   
+
   ngOnInit(): void {
     this.startTyping();
   }
 
   ngOnDestroy(): void {
     this.sub?.unsubscribe();
+  }
+
+  openContactModal(){
+    this.openContact.emit();
   }
 
   startTyping() {
@@ -48,6 +56,8 @@ export class HomepageComponent implements OnInit, OnDestroy {
       }
     });
   }
+
+   
 
   pause(ms: number) {
     this.sub?.unsubscribe();

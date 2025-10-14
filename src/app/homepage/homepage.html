@@ -1,18 +1,23 @@
-<section class="home">
+<section class="home" id="home">
   <div class="home-content">
     <h3>Hello, I'm</h3>
     <h1>Sri Hari Krishnan</h1>
     <h3>And I'm a <span class="typing text">{{ displayText$ | async }}</span></h3>
-    <p>I'm a passionate Software Development Engineer in Test with 2+ years of experience in software testing, software engineering, and problem-solving. Explore my projects and skills below!</p>
+    <p>SDET expert who transforms testing with modern automation. I architect fast, reliable frameworks using Selenium & Playwright, slash release cycles, and pioneer AI-driven testing for the future.</p>
     <div class="home-sci">
       <a href="https://github.com/harikrris"><i class='bx bxl-github'></i></a>
       <a href="https://www.linkedin.com/in/sri-hari-krishnan-r-a61667202/"><i class='bx bxl-linkedin'></i></a>
-      <a href="#"><i class='bx bxl-whatsapp'></i></a>
+      <a href="mailto:sriharikrishnan.r10@gmail.com" target="_blank">
+  <i class='bx bx-envelope'></i>
+</a>
+      
+    
     </div>
     <div class="home-btn-row">
       <!-- Updated button with fragment -->
       <a routerLink="/" fragment="about" class="btn-box">More about me</a>
       <a href="assets/resume_final.pdf" class="btn-box" download>Download Resume</a>
+      <a class="btn-box" (click)="openContactModal()">Get In Touch</a>
     </div>
   </div>
 </section>

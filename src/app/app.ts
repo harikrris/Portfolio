@@ -59,4 +59,8 @@ export class App implements OnInit {
   openContact() {
     this.contactRef?.open();
   }
+
+  onHomepageContactClick() {
+    this.openContact();
+  }
 }
