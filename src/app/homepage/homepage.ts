@@ -12,7 +12,7 @@ import { BehaviorSubject, Subscription, timer } from 'rxjs';
 export class HomepageComponent implements OnInit, OnDestroy {
   @Output() openContact = new EventEmitter<void>(); 
 
-  roles: string[] = ["Lead SDET", "QA", "AI Enabled SDET"];
+  roles: string[] = ["Lead SDET", "QA", "AI Enabled SDET", "Software Tester"];
   displayText$ = new BehaviorSubject<string>('');
   private roleIndex = 0;
   private charIndex = 0;

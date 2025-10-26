@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   experiences = [
     {
-      role: 'Lead SDET Automation Test Engineer – TCS',
+      role: 'Senior SDET Automation Test Engineer – TCS',
       duration: '2024 – Present',
       tagline: 'The Modernizer',
       stars: 5,
@@ -29,7 +29,8 @@ export class ExperienceComponent {
       details: [
         'Automated 200+ regression cases with Selenium + TestNG',
         'Cut manual effort by 30%',
-        'Improved coverage & collaboration with developers'
+        'Improved coverage & collaboration with developers',
+        'Built and maintained CI/CD pipelines using GitHub Actions'
       ]
     }
     
