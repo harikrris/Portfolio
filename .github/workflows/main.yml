@@ -20,7 +20,7 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.TEST_REPO_PAT }}
-        repository: harikrris/PortfolioTests
+        repository: harikrris/Portfolio-Test-Framework
         event-type: portfolio-updated
         client-payload: |
           {
